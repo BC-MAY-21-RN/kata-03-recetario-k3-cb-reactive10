@@ -1,20 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { globalStyles } from './src/Styles/GlobalStyle';
+import { Colors } from './src/Styles/Colors';
+import { Card } from './src/Components/Card';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={globalStyles.screenContainer}>
+      {/* <Text style={globalStyles.title}>TREDING</Text> */}
+      {/* <Text style={globalStyles.title}>RECENT</Text> */}
+      <Card/>
+      <StatusBar backgroundColor={Colors.primary} style='light' />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

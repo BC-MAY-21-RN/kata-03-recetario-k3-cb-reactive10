@@ -39,17 +39,21 @@ export const globalStyles = StyleSheet.create({
     marginLeft: 20
   },
   ingredients: {
-    width: '100%',
     fontSize: 20,
     fontWeight: "400",
     marginTop: 15,
-    color: Colors.ligth,
-    marginLeft: 20,
+    marginLeft: 10,
+    marginRight: 10,
     justifyContent: "space-between",
     borderBottomColor: Colors.ligth,
     borderBottomWidth: StyleSheet.hairlineWidth,
     flex: 1,
     flexDirection: "row",
-    justifyContent: "space-between"
+  },
+  text: {
+    color: Colors.ligth,
+    fontSize: 20,
+    fontWeight: '400',
+
   }
 });

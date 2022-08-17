@@ -10,6 +10,8 @@ export default function Main() {
     <View style={style.mainContainer}>
       <Search style={globalStyles.searchBarContainer} />
 
+      <ScrollView>
+
       <View style={style.themeContainer}>
         <FontAwesome
           name="moon-o"
@@ -22,32 +24,49 @@ export default function Main() {
       <Text style={style.headings}>Trending</Text>
       <View style={style.listOfRecipeContainer}>
         <View style={style.recipeBox}>
-          <ScrollView horizontal style={{ width: "100%" }}>
-            <Image
-              source={require("../assets/img/Taco.jpg")}
-              style={{ width: 110, height: 157 }}
-            />
+          <ScrollView horizontal style={{ width: "100%", height: 200}}>
+            
             {/* Falta poner texto aqui mero */}
+          <View style={{ width: 110, height: 157}}>
             <Image
               source={require("../assets/img/Taco.jpg")}
               style={style.image}
-            />
+            /> 
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+          </View>
+
+          <View style={{ width: 110, height: 157, marginLeft: 30}}>
             <Image
               source={require("../assets/img/Taco.jpg")}
               style={style.image}
-            />
-             <Image
-              source={require("../assets/img/Taco.jpg")}
-              style={style.image}
-            />
+            /> 
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+          </View>
+
+          <View style={{ width: 110, height: 157, marginLeft: 30}}>
             <Image
               source={require("../assets/img/Taco.jpg")}
               style={style.image}
-            />
+            /> 
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+          </View>
+
+          <View style={{ width: 110, height: 157, marginLeft: 30}}>
             <Image
               source={require("../assets/img/Taco.jpg")}
               style={style.image}
-            />
+            /> 
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+          </View>
+
+          <View style={{ width: 110, height: 157, marginLeft: 30}}>
+            <Image
+              source={require("../assets/img/Taco.jpg")}
+              style={style.image}
+            /> 
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+          </View>
+           
           </ScrollView>
         </View>
         <Text style={style.headings}>Recent</Text>
@@ -63,6 +82,7 @@ export default function Main() {
           </ScrollView>
         </View>
       </View>
+      </ScrollView>
     </View>
   );
 }
@@ -74,7 +94,7 @@ const style = StyleSheet.create({
   },
   recipeBox: {
     width: "90%",
-    height: 157,
+    height: 165,
     marginLeft: 20,
   },
   secondListOfRecipeContainer:{
@@ -98,9 +118,8 @@ const style = StyleSheet.create({
   },
   image: {
     width: 110,
-    height: 157,
-    marginLeft: 30,
-    borderRadius: 5,
+    height: 110,
+    borderRadius: 9,
   },
   headings: {
     fontSize: 50,

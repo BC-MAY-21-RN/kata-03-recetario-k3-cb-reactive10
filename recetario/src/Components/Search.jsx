@@ -1,16 +1,39 @@
-import { View, Text, TextInput } from 'react-native'
-import { globalStyles } from '../Styles/GlobalStyle'
-import React from 'react'
+import * as React from 'react';
+import { Text, View, TextInput, StyleSheet } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 
-const Search = () => {
-    return (
-        <View style={globalStyles.containerView}>
-            <View style={globalStyles.searchBarContainer}>
-                <TextInput> Search </TextInput>
-            </View>
-        </View>
-    )
+export default function Search() {
+  return (
+    <View style={styles.container}>
+      <View style={styles.inputContainer}>
+        <FontAwesome name="search" size={24} color="white" />
+        <TextInput placeholder="Whant to you want to eat? " style={styles.textInput} />
+        <FontAwesome name="microphone" size={24} color="white" />
+      </View>
+    </View>
+  );
 }
 
-export default Search
+const styles = StyleSheet.create({
+  container: {
+    marginTop:30,
+    marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inputContainer: {
+    width: '90%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    backgroundColor: 'dimgray',
+    borderRadius: 6,
+  },
+  textInput: {
+    paddingLeft: 10,
+    flex: 1,
+    height: 50,
+  },
+});
+
 

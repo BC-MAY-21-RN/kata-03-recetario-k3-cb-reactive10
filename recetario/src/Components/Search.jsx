@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, TextInput, StyleSheet } from 'react-native';
+import { Text, View, TextInput, StyleSheet, ViewPagerAndroidBase } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 export default function Search() {
@@ -16,7 +16,7 @@ export default function Search() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:30,
+    marginTop: 70,
     marginBottom: 20,
     alignItems: 'center',
     justifyContent: 'center',

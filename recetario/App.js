@@ -1,16 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import  Main  from  './src/Components/Main'
+import {Card} from './src/Components/Card.jsx'
 import { globalStyles } from './src/Styles/GlobalStyle';
 import { Colors } from './src/Styles/Colors';
-import { Card } from './src/Components/Card';
-import Search from './src/Components/Search';
 
 export default function App() {
   return (
     <View style={globalStyles.screenContainer}>
       {/* <Text style={globalStyles.title}>TREDING</Text> */}
       {/* <Text style={globalStyles.title}>RECENT</Text> */}
-      <Card/> 
+      <Main /> 
       <StatusBar backgroundColor={Colors.primary} style='light' />
     </View>
   );

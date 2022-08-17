@@ -1,13 +1,10 @@
 import { View, Text,Image, StyleSheet, ScrollView} from 'react-native'
 import React from 'react'
-
 import { globalStyles } from '../Styles/GlobalStyle'
-import Search from '../Components/Search'
 
 export const Card = () => {
   return (
     <View style={styles.container}>
-      <Search style={globalStyles.searchBarContainer}/>
       <Image style={styles.image} source={require('../assets/img/Taco.jpg')} />
 
       <Text style={globalStyles.simpleTitle}>Treding</Text>
@@ -52,12 +49,11 @@ export const Card = () => {
 const styles = StyleSheet.create({
   containerScrollView:{
     flex: 1,
-    // flexDirection: 'column',
     marginTop: 30
   },
   container:{
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   image:{
     width: '100%',

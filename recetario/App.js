@@ -3,13 +3,14 @@ import { Text, View } from 'react-native';
 import { globalStyles } from './src/Styles/GlobalStyle';
 import { Colors } from './src/Styles/Colors';
 import { Card } from './src/Components/Card';
+import Search from './src/Components/Search';
 
 export default function App() {
   return (
     <View style={globalStyles.screenContainer}>
       {/* <Text style={globalStyles.title}>TREDING</Text> */}
       {/* <Text style={globalStyles.title}>RECENT</Text> */}
-      <Card/>
+      <Card/> 
       <StatusBar backgroundColor={Colors.primary} style='light' />
     </View>
   );

@@ -55,5 +55,22 @@ export const globalStyles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '400',
 
-  }
+  },
+  containerView:{
+    width: '90%',
+    marginTop: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  searchBarContainer:{
+    width: '100%',
+    borderRadius: 30,
+    borderWidth: 1,
+    borderColor: 'black',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+
+  
 });

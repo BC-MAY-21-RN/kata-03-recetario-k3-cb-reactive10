@@ -1,11 +1,13 @@
-import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
-import React from "react";
+import { View, Text, StyleSheet, Image, ScrollView, Switch } from "react-native";
+import React,{useState} from "react";
 import Search from "./Search";
 import { FontAwesome } from "@expo/vector-icons";
 import { globalStyles } from "../Styles/GlobalStyle";
 import { Colors } from "../Styles/Colors";
 
+
 export default function Main() {
+  
   return (
     <View style={style.mainContainer}>
       <Search style={globalStyles.searchBarContainer} />
@@ -18,7 +20,9 @@ export default function Main() {
           size={38}
           color="white"
           style={style.darkTheme}
+          
         />
+
         <Text style={style.textTheme}>Normal mode</Text>
       </View>
       <Text style={style.headings}>Trending</Text>

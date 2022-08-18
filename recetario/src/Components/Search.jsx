@@ -7,7 +7,7 @@ export default function Search() {
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <FontAwesome name="search" size={24} color="white" />
-        <TextInput placeholder="Whant to you want to eat? " style={styles.textInput} />
+        <TextInput placeholder="Whant to you want to eat? " placeholderTextColor={'white'} style={styles.textInput} />
         <FontAwesome name="microphone" size={24} color="white" />
       </View>
     </View>
@@ -28,11 +28,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     backgroundColor: 'dimgray',
     borderRadius: 6,
+    
   },
   textInput: {
     paddingLeft: 10,
     flex: 1,
     height: 50,
+    
   },
 });
 

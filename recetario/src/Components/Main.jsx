@@ -38,7 +38,7 @@ export default function Main() {
           
             {/* Falta poner texto aqui mero */}
             {data.map( (listData) =>
-          <View style={{ width: 110, height: 157}}>
+          <View style={{ width: 110, height: 157, margin: 2}}>
             <Image
               source={{uri:listData.image}}
               style={style.image}

@@ -4,6 +4,7 @@ import Search from "./Search";
 import { FontAwesome } from "@expo/vector-icons";
 import { globalStyles } from "../Styles/GlobalStyle";
 import { Colors } from "../Styles/Colors";
+import { data } from '../data/data'
 
 
 export default function Main() {
@@ -26,23 +27,36 @@ export default function Main() {
         <Text style={style.textTheme}>Normal mode</Text>
       </View>
       <Text style={style.headings}>Trending</Text>
+      
       <View style={style.listOfRecipeContainer}>
+      
+      
         <View style={style.recipeBox}>
+        
+        
           <ScrollView horizontal style={{ width: "100%", height: 200}}>
-            
+          
             {/* Falta poner texto aqui mero */}
+            {data.map( (listData) =>
           <View style={{ width: 110, height: 157}}>
             <Image
-              source={require("../assets/img/Taco.jpg")}
+              source={{uri:listData.image}}
               style={style.image}
             /> 
-             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>Taco</Text>
+             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>{listData.title}</Text>
           </View>
-           
+
+          )}
           </ScrollView>
+          
+          
         </View>
-        <Text style={style.headings}>Recent</Text>
+        
+        
+        
+        {/* <Text style={style.headings}>Recent</Text> */}
       </View>
+     
       {/* Second part */}
       <View style={style.secondListOfRecipeContainer}>
         <View style={style.secondRecipeBox}>
@@ -68,9 +82,13 @@ const style = StyleSheet.create({
     height: "100%",
   },
   recipeBox: {
-    width: "90%",
+    width: "95%",
     height: 165,
-    marginLeft: 20,
+    margin: 7,
+  },
+  listOfRecipeContainer:{
+  flexDirection:'row',
+  alignItems:'center',
   },
   secondListOfRecipeContainer:{
     width: "90%",

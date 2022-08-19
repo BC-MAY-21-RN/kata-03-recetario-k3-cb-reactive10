@@ -3,11 +3,12 @@ import React from 'react'
 import { globalStyles } from '../Styles/GlobalStyle'
 
 export const Card = () => {
+  //console.log(category)
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/img/Taco.jpg')} />
 
-      <Text style={globalStyles.simpleTitle}>Treding</Text>
+      <Text style={globalStyles.simpleTitle}>category</Text>
       <Text style={globalStyles.productName}>Tacos</Text>
 
       <View style={styles.containerScrollView}>

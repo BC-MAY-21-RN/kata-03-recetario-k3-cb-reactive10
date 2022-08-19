@@ -3,6 +3,7 @@ export const data =[
   "id": 1,
 "image": "https://images.unsplash.com/photo-1565299543923-37dd37887442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFua2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
 "title": "Pancakes",
+"category": "Treding",
 "servings": 10,
 "ingredients": [
   {
@@ -27,6 +28,7 @@ export const data =[
 "id": 2,
 "image": "https://www.theseasonedmom.com/wp-content/uploads/2018/02/The-Easiest-Burrito-Recipe-6-716x1024.jpg",
 "title": "Burrito",
+'category': 'Treding',
 "servings": 6,
 "ingredients": [
   {
@@ -63,6 +65,7 @@ export const data =[
   "id": 3,
   "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
   "title": "Boneless",
+  'category': 'Treding',
   "servings": 3,
   "ingredients": [
     {
@@ -111,6 +114,7 @@ export const data =[
     "id": 4,
     "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
     "title": "Bandeja paisa",
+    'category': 'Treding',
     "servings": 4,
     "ingredients": [
       {
@@ -179,6 +183,7 @@ export const data =[
       "id": 5,
       "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
       "title": "Arepa",
+      'category': 'Treding',
       "servings": 5,
       "ingredients": [
         {
@@ -203,6 +208,7 @@ export const data =[
         "id": 6,
         "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
         "title": "Tacos",
+        'category': 'Recent',
         "servings": 3,
         "ingredients": [
           {

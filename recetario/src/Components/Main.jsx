@@ -43,7 +43,7 @@ export default function Main() {
               source={{uri:listData.image}}
               style={style.image}
             /> 
-             <Text style={{color:'white', fontSize: 20, padding: 17, textAlign: 'center', fontWeight: 'bold'}}>{listData.title}</Text>
+             <Text style={{color:'white', fontSize: 18, padding: 4, textAlign: 'center', fontWeight: 'bold'}}>{listData.title}</Text>
           </View>
 
           )}
@@ -54,10 +54,10 @@ export default function Main() {
         
         
         
-        {/* <Text style={style.headings}>Recent</Text> */}
+ 
       </View>
-     
       {/* Second part */}
+      <Text style={style.headings}>Recent</Text>
       <View style={style.secondListOfRecipeContainer}>
         <View style={style.secondRecipeBox}>
           <ScrollView horizontal style={{ width: "100%" }}>
@@ -66,7 +66,7 @@ export default function Main() {
             <Image
               source={require("../assets/img/Taco.jpg")} style={{width: '100%', height: '85%'}}
             />
-            <Text style={{fontSize: 22, fontWeight: '400', color: 'white', textAlign: 'center'}}>Taco</Text>
+            <Text style={{fontSize: 18,  fontWeight: 'bold', color: 'white', textAlign: 'center'}}>Taco</Text>
             </View>
           </ScrollView>
         </View>

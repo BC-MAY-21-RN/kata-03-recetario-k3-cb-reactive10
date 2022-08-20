@@ -112,7 +112,7 @@ export const data =[
   },
   {
     "id": 4,
-    "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
+    "image": "https://mejorconsalud.as.com/wp-content/uploads/2022/02/bandeja-paisa.jpg",
     "title": "Bandeja paisa",
     'category': 'Treding',
     "servings": 4,
@@ -181,7 +181,7 @@ export const data =[
     },
     {
       "id": 5,
-      "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_jeQN3EO6Y00lB_vQy2aviwfvCEqbalwAUQ&usqp=CAU",
       "title": "Arepa",
       'category': 'Treding',
       "servings": 5,
@@ -206,7 +206,7 @@ export const data =[
       },
       {
         "id": 6,
-        "image": "https://cdn7.kiwilimon.com/recetaimagen/28100/640x426/28584.jpg.webp",
+        "image": "https://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg",
         "title": "Tacos",
         'category': 'Recent',
         "servings": 3,

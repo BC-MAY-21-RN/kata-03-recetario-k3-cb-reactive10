@@ -37,8 +37,8 @@ export default function Main() {
           <ScrollView horizontal style={{ width: "100%", height: 200}}>
           
             {/* Falta poner texto aqui mero */}
-            {data.map( (listData) =>
-          <View style={{ width: 110, height: 157, margin: 2}}>
+            {data.map( (listData, id) =>
+          <View key={id} style={{ width: 110, height: 157, margin: 2}}>
             <Image
               source={{uri:listData.image}}
               style={style.image}

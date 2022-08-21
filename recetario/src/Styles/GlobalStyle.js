@@ -8,6 +8,10 @@ export const globalStyles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: Colors.dark,
   },
+  mainContainer: {
+    width: '100%',
+    height: '100%',
+  },
   title: {
     fontSize: 32,
     fontWeight: "bold",
@@ -56,14 +60,14 @@ export const globalStyles = StyleSheet.create({
     fontWeight: '400',
 
   },
-  containerView:{
+  containerView: {
     width: '90%',
     marginTop: 35,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  searchBarContainer:{
+  searchBarContainer: {
     width: '100%',
     borderRadius: 30,
     borderWidth: 1,
@@ -72,5 +76,5 @@ export const globalStyles = StyleSheet.create({
     flexDirection: 'row',
   },
 
-  
+
 });

@@ -1,14 +1,20 @@
 import * as React from 'react'
-import { View, Text, Button } from 'react-native'
+
+import { DefaultLayout, Search, HorizontalList } from '../Components'
+import { ScrollView } from 'react-native'
+
+import { data } from "../data/data.js";
 
 export const Main = ({ navigation }) => {
     return (
-        <View>
-            <Text>Pantalla principal</Text>
-            <Button
-                title='Ir a detalles'
-                onPress={() => navigation.navigate('RecipeDetail')}
-            />
-        </View>
+        <DefaultLayout >
+            <>
+                <Search />
+                <ScrollView>
+                    <HorizontalList title="TRENDING" data={data} navigation={navigation} />
+                    <HorizontalList title="RECENT" data={data} isLarge navigation={navigation} />
+                </ScrollView>
+            </>
+        </DefaultLayout>
     )
 }

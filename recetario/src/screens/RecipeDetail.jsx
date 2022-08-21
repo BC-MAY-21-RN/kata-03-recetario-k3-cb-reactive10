@@ -1,15 +1,16 @@
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { Text, Button } from 'react-native';
+import { DefaultLayout } from "../Components";
 
-export const RecipeDetail = ({navigation}) => {
+export const RecipeDetail = ({ navigation }) => {
     return (
-        <View>
+        <DefaultLayout>
             <Text>Detalles de la receta</Text>
             <Button
                 title='Atras'
-                onPress={() => navigation.goBack() }
+                onPress={() => navigation.navigate('Main')}
             />
-        </View>
+        </DefaultLayout>
     )
 }
 

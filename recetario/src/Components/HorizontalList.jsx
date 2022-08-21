@@ -13,6 +13,7 @@ export const HorizontalList = ({ data, title, isLarge = false, navigation }) => 
             title={item.title}
             large={isLarge}
             navigation={navigation}
+            item={item}
         />
     )
 

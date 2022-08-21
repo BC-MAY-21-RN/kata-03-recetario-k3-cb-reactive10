@@ -1,14 +1,16 @@
 import * as React from 'react'
 import { Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-export const ListItem = ({ id, uri, title, large = false, navigation }) => {
+export const ListItem = ({ id, uri, title, large = false, navigation, item }) => {
     return (
-        <TouchableOpacity 
-            key={id} 
+        <TouchableOpacity
+            key={id}
             style={large ? style.itemContainer_large : style.itemContainer}
-            onPress={() => navigation.navigate("RecipeDetail") }
+            onPress={() => navigation.navigate("RecipeDetail", {
+                recipe: item
+            })}
         >
-            <Image 
+            <Image
                 source={{ uri: uri }}
                 style={large ? style.image_large : style.image}
             />

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, TextInput, StyleSheet, ViewPagerAndroidBase } from 'react-native';
+import { Text, View, TextInput, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 export const Search = () => {

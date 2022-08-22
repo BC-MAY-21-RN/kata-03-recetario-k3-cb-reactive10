@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Text, View, TextInput, StyleSheet, ViewPagerAndroidBase } from 'react-native';
+import { Text, View, TextInput, StyleSheet } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-export default function Search() {
+export const Search = () => {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
@@ -28,13 +28,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     backgroundColor: 'dimgray',
     borderRadius: 6,
-    
   },
   textInput: {
     paddingLeft: 10,
     flex: 1,
     height: 50,
-    
+
   },
 });
 

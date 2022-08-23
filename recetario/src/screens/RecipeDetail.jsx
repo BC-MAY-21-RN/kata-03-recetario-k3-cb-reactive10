@@ -48,16 +48,6 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         marginTop: 0,
         opacity: .5
-    },
-    azul: {
-        display: 'flex',
-        backgroundColor: "blue",
-        marginBottom: 10,
-        alignItems: 'flex-start',
-        flexDirection: 'row',
-        padding: 10,
-        justifyContent: 'space-between'
     }
-
-
+    
 })

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, StyleSheet, Image, View, FlatList, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, Image, View, FlatList } from 'react-native';
 import { DefaultLayout } from "../Components";
 import { AntDesign, EvilIcons } from '@expo/vector-icons';
 import { globalStyles } from "../Styles"
@@ -17,14 +17,12 @@ export const RecipeDetail = ({ route, navigation: { goBack } }) => {
 
     return (
         <DefaultLayout>
-            <View style={{zIndex: 1, position: 'absolute', marginTop: 80, marginLeft: 20, flexDirection: 'row', justifyContent: 'space-between', width: '90%'}}>
-            <TouchableOpacity onPress={() => goBack()}>
-            <AntDesign name="close" size={28} color="white"  />
-            </TouchableOpacity>
+            <View style={styles.iconContainer}>
+            <AntDesign name="close" size={28} color="white" onPress={() => goBack()}/>
          
-            <View style={{flexDirection: 'row'}}>
+            <View style={styles.innerIconContainer}>
 
-            <EvilIcons style={{marginRight: 15}} name="share-apple" size={35} color="white" />
+            <EvilIcons style={styles.heartIcon} name="share-apple" size={35} color="white" />
             
             <AntDesign name="hearto" size={24} color="white" />
             </View>
@@ -62,6 +60,21 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         marginTop: 0,
         opacity: .5
+    },
+    iconContainer: {
+        zIndex: 1, 
+        position: 'absolute', 
+        marginTop: 80, 
+        marginLeft: 20, 
+        flexDirection: 'row', 
+        justifyContent: 'space-between', 
+        width: '90%'
+    },
+    innerIconContainer: {
+        flexDirection: 'row'
+    },
+    heartIcon: {
+        marginRight: 15
     }
     
 })

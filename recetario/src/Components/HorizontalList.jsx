@@ -34,7 +34,7 @@ export const HorizontalList = ({ data, title, isLarge = false, navigation }) => 
 const style = StyleSheet.create({
     title:{
         marginLeft: 10,
-        color: 'red',
+        color: '#E2163E',
         fontSize: 24
     }
 })

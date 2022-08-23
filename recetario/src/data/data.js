@@ -3,7 +3,7 @@ export const data =[
   "id": 1,
 "image": "https://images.unsplash.com/photo-1565299543923-37dd37887442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFua2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
 "title": "Pancakes",
-"category": "Trending",
+"category": "Recent",
 "servings": 10,
 "ingredients": [
  {
@@ -229,4 +229,79 @@ export const data =[
           }
         ]
         }
-]
+        ,
+        {
+          "id": 7,
+          "image": "https://www.recetasderechupete.com/wp-content/uploads/2021/06/Sushi-y-nigiris-variados.jpg",
+          "title": "Sushi",
+          'category': 'Recent',
+          "servings": 5,
+          "ingredients": [
+            {
+              "ingredient": "Sushi Rice",
+              "size": "250g"
+            },
+            {
+              "ingredient": "Sushi Vinegar",
+              "size": "100ml"
+            },
+            {
+              "ingredient": "Wasabi",
+              "size": "A pinch"
+            },
+            {
+              "ingredient": "Salmon",
+              "size": "250g"
+            }
+          ]
+          },
+          {
+            "id": 8,
+            "image": "https://ep01.epimg.net/verne/imagenes/2020/07/24/mexico/1595548705_180095_1595548849_noticia_normal.jpg",
+            "title": "Tlayuda",
+            'category': 'Recent',
+            "servings": 3,
+            "ingredients": [
+              {
+                "ingredient": "Onion",
+                "size": "1 pc"
+              },
+              {
+                "ingredient": "Tomatoe",
+                "size": "1 pc"
+              },
+              {
+                "ingredient": "Tlayuda Tortilla",
+                "size": "2 pcs"
+              },
+              {
+                "ingredient": "Beef",
+                "size": "500g"
+              }
+              ,
+              {
+                "ingredient": "Chorizo",
+                "size": "250g"
+              }
+              ,
+              {
+                "ingredient": "Avocado",
+                "size": "1 pc"
+              }
+              ,
+              {
+                "ingredient": "Oaxaca Cheesse",
+                "size": "50g"
+              }
+              ,
+              {
+                "ingredient": "Refried beans",
+                "size": "100g"
+              },
+              {
+                "ingredient": "Lettuce",
+                "size": "1/2 pc"
+              }
+            ]
+            }
+      ]

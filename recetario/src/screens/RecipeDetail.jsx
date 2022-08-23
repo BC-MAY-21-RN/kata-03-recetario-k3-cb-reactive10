@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, StyleSheet, Image, View, FlatList } from 'react-native';
-import { DefaultLayout, ListItem } from "../Components";
+import { DefaultLayout } from "../Components";
 import { globalStyles } from "../Styles"
 
 export const RecipeDetail = ({ route, navigation }) => {
@@ -17,26 +17,20 @@ export const RecipeDetail = ({ route, navigation }) => {
     return (
         <DefaultLayout>
             <Image style={styles.image} source={{ uri: recipe.image }} />
-
             <Text style={globalStyles.simpleTitle}>{recipe.category}</Text>
             <Text style={globalStyles.productName}>{recipe.title}</Text>
-
+            
             <View style={styles.containerScrollView}>
                 <Text style={globalStyles.description}>Ingredients
                     <Text> for {recipe.servings} serving</Text>
                 </Text>
-
                 <FlatList
                     data={recipe.ingredients}
                     renderItem={renderItem}
                 />
-
             </View>
         </DefaultLayout>
-
     )
-
-
 }
 
 const styles = StyleSheet.create({

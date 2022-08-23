@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { DefaultLayout, Search, HorizontalList } from '../Components'
 import { ScrollView } from 'react-native'
@@ -6,9 +6,16 @@ import { ScrollView } from 'react-native'
 import { data } from "../data/data.js";
 
 export const Main = ({ navigation }) => {
-    const recent = data.filter(item => item.category === 'Recent')
-    const trending = data.filter(item => item.category === 'Trending')
-    
+
+    const [recent, setRecent] = useState([])
+    const [trending, setTrending] = useState([])
+
+    useEffect(() => {
+        setRecent(data.filter(item => item.category === 'Recent'))
+        setTrending(data.filter(item => item.category === 'Trending'))
+    }, [])
+
+
     return (
         <DefaultLayout >
             <>
